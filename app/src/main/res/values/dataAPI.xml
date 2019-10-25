@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+data class data(
+    val auth: Any,
+    val description: Any,
+    val events: List<Event>,
+    val folders: List<Any>,
+    val folders_order: List<Any>,
+    val id: String,
+    val name: String,
+    val order: List<String>,
+    val protocolProfileBehavior: List<Any>,
+    val requests: List<Request>,
+    val variables: List<Variable>
+)
+
+data class Event(
+    val listen: String,
+    val script: Script
+)
+
+data class Script(
+    val exec: List<String>,
+    val id: String,
+    val type: String
+)
+
+data class Request(
+    val auth: Any,
+    val collectionId: String,
+    val currentHelper: Any,
+    val `data`: List<DataX>,
+    val dataMode: String,
+    val dataOptions: Any,
+    val description: String,
+    val events: Any,
+    val folder: Any,
+    val headerData: List<HeaderData>,
+    val headers: String,
+    val helperAttributes: Any,
+    val id: String,
+    val method: String,
+    val name: String,
+    val pathVariableData: List<Any>,
+    val pathVariables: List<Any>,
+    val queryParams: List<QueryParam>,
+    val rawModeData: String,
+    val url: String
+)
+
+data class DataX(
+    val description: String,
+    val enabled: Boolean,
+    val key: String,
+    val type: String,
+    val value: List<List<Any>>
+)
+
+data class HeaderData(
+    val enabled: Boolean,
+    val key: String,
+    val value: String
+)
+
+data class QueryParam(
+    val description: String,
+    val enabled: Boolean,
+    val equals: Boolean,
+    val key: String,
+    val value: String
+)
+
+data class Variable(
+    val disabled: Boolean,
+    val key: String,
+    val value: String
+)
