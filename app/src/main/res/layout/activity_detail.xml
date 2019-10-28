@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSubmit"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:text="Save"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:padding="8dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Edit"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ivFoto"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                tools:src="@tools:sample/avatars"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@tools:sample/full_names"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="NAMA"
+        android:textSize="14dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/tvNamaDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        tools:text="@tools:sample/full_names"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="PHONE"
+        android:textSize="14dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/tvPhoneDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        tools:text="@tools:sample/us_phones"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="EMAIL"
+        android:textSize="14dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/tvEmailDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        tools:text="agunggustaman29@gmail.com"
+        android:textColor="@android:color/white"/>
+
+
+
+</LinearLayout>
