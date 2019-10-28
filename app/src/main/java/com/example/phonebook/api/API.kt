@@ -93,19 +93,19 @@ class API {
 
     interface Service {
 
-        @GET("posts")
+        @GET("users")
         fun getContacts() : Call<ResponseData>
 
         @GET("users/{id}")
         fun getDetail(@Path("id") id: Int) : Call<ContactData>
 
-        @POST("posts")
+        @POST("users")
         fun addContact(@Body hashMap: HashMap<String, String>) : Call<ContactData>
 
-        @PATCH("posts/{id}")
+        @PATCH("users/{id}")
         fun updateContact(@Path("id") id: Int, @Body contactData: ContactData) : Call<ContactData>
 
-        @DELETE("posts/{id}")
+        @DELETE("users/{id}")
         fun deleteContact(@Path("id") id: Int) : Call<Response<Void>>
 
     }
